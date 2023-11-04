@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+    </style>
+</head>
+<body style="text-align: justify;">
+    <form action="form.php" style="vertical-align: top;" style="text-align: right;">
+        <label for="firstname" style="text-align: right;">
+            First Name:&nbsp;
+            <input type="text" name="name" id="firstname" placeholder="Enter your first name" size="100%" maxlength="100" shape="rect" style="padding: right 20%s;">
+        </label><br>
+        <label for="lastname" style="text-align: right;">
+            Last Name:&nbsp;
+            <input type="text" name="lname" id="lastname" placeholder="Enter Your Last name" size="100%" maxlength="100">
+        </label><br>
+        <label for="email" style="text-align: right;">
+            Email:&nbsp;
+            <input type="text" name="email" id="email" placeholder="It should contains @" size="100%" maxlength="100">
+        </label><br>
+        <label>
+            Mobile:&nbsp;
+            <input type="text" placeholder="only 10 digits are allowed" size="100%" maxlength="100">
+        </label><br>
+       Gender:
+       <input type="radio" name="gender" id="male" value="m">
+       <label for="male">Male</label>
+       <input type="radio" name="gender" id="female" value="f">
+       <label for="female">Female</label><br>
+        <label for="DOB">
+            DateOfBirth:&nbsp;
+            <input type="date" name="age" id="DOB">
+        </label><br>
+        <label>
+            <span style="text-align:center,start,left;">Address</span>
+            <Textarea cols="50" rows="8"></Textarea>
+        </label><br>
+        <label>
+            City:&nbsp;
+            <input type="text" size="100%" maxlength="100" >
+        </label><br>
+        <label style="text-align: right;">
+            Area PIN:&nbsp;
+            <input type="text" size="100%" maxlength="100">
+        </label><br>
+        <label style="text-align: right;">
+            State:&nbsp;
+            <input type="text" size="100%" maxlength="100">
+        </label><br>
+        <label for="Qualification" style="text-align: right;">
+            Qualification:&nbsp;
+            <select name="Edu" id="Qualification" >
+                <option value="">Select Qualification</option>
+                <option value="graduate">graduate</option>
+                <option value="undergraduate">undergraduate</option>
+            </select><br>
+        </label>
+        <label style="text-align: right;">
+            Specialization:&nbsp;
+            <input type="checkbox" name="Specialization"  value="CS">Computer Science <br>
+            <input type="checkbox" name="Specialization"  value="IT">Information Technology <br>
+            <input type="checkbox" name="Specialization"  value="Comp Arc">Computer Architecture <br>
+            <input type="checkbox" name="Specialization"  value="Telecom">Tele Communication
+        </label><br>
+        <label for="password" style="text-align: right;">
+            password:&nbsp;
+            <input type="text" name="pass" id="password" size="100%" maxlength="100">
+        </label><br>
+        <label for="RegBtn">
+            <button type="submit" style="background-color: green;">Registered</button>
+        </label>
+    </form>
+    
+</body>
+</html>
